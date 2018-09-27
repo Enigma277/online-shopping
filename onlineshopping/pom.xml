@@ -15,7 +15,12 @@
 
 
 	<dependencies>
-
+		<!-- Linking Backend Project -->
+		<dependency>
+			<groupId>enigma27</groupId>
+			<artifactId>shoppingbackend</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 		<!-- J-UNIT -->
 		<dependency>
 			<groupId>junit</groupId>
