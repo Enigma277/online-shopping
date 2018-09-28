@@ -23,45 +23,45 @@ public class CategoryTestCase {
 	@BeforeClass
 	public static void init() {
 		context = new AnnotationConfigApplicationContext();
-		context.scan("net.kzn.shoppingbackend");
+		context.scan("enigma27.shoppingbackend");
 		context.refresh();
 		categoryDAO = (CategoryDAO)context.getBean("categoryDAO");
 	}
 	
 	
-/*	@Test
+	/*@Test
 	public void testAddCategory() {
 		
 		category = new Category();
 		
-		category.setName("Laptop");
-		category.setDescription("This is some description for laptop!");
-		category.setImageURL("CAT_105.png");
+		category.setName("Gates");
+		category.setDescription("This is some description for Gates!");
+		category.setImageURL("CAT_1005.png");
 		
 		assertEquals("Successfully added a category inside the table!",true,categoryDAO.add(category));
 		
 		
-	}
-	*/
+	}*/
 	
-/*	@Test
+	
+	/*@Test
 	public void testGetCategory() {
 		
-		category = categoryDAO.get(3);
+		category = categoryDAO.get(6);
 		
 		
-		assertEquals("Successfully fetched a single category from the table!","Television",category.getName());
+		assertEquals("Successfully fetched a single category from the table!","Gates",category.getName());
 		
 		
-	}
-	*/
+	}*/
 	
-/*	@Test
+	
+	/*@Test
 	public void testUpdateCategory() {
 		
-		category = categoryDAO.get(3);
+		category = categoryDAO.get(6);
 		
-		category.setName("TV");
+		category.setName("UpdatedGates");
 		
 		assertEquals("Successfully updated a single category in the table!",true,categoryDAO.update(category));
 		
@@ -69,25 +69,25 @@ public class CategoryTestCase {
 	}
 	*/
 
-/*	@Test
+	/*@Test
 	public void testDeleteCategory() {
 		
-		category = categoryDAO.get(3);		
+		category = categoryDAO.get(6);		
 		assertEquals("Successfully deleted a single category in the table!",true,categoryDAO.delete(category));
 		
 		
-	}
-*/	
-/*	
-	@Test
+	}*/
+	
+	
+	/*@Test
 	public void testListCategory() {
 					
-		assertEquals("Successfully fetched the list of categories from the table!",3,categoryDAO.list().size());
+		assertEquals("Successfully fetched the list of categories from the table!",1,categoryDAO.list().size());
 		
 		
 	}
-	
-*/
+	*/
+
 	
 	@Test
 	public void testCRUDCategory() {
